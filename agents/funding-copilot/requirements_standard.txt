@@ -1,1 +1,4 @@
 pydantic
+pydantic
+ibm-watsonx-orchestrate
+duckduckgo-search

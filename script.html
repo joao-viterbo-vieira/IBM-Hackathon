@@ -1,0 +1,21 @@
+<script>
+    window.wxOConfiguration = {
+        orchestrationID: "a7c63b7a0a8e4b94830081419760efb8_0480213f-53b8-4711-b72f-c2aa44ec4833",
+        hostURL: "https://au-syd.watson-orchestrate.cloud.ibm.com",
+        rootElementID: "root",
+        deploymentPlatform: "ibmcloud",
+        crn: "crn:v1:bluemix:public:watsonx-orchestrate:au-syd:a/a7c63b7a0a8e4b94830081419760efb8:0480213f-53b8-4711-b72f-c2aa44ec4833::",
+        chatOptions: {
+            agentId: "f264a4ad-af60-442f-8184-8c178201309c",
+            agentEnvironmentId: "b5b1c096-4681-4b06-ae71-1f26a56315e8",
+        }
+    };
+    setTimeout(function () {
+        const script = document.createElement('script');
+        script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+        script.addEventListener('load', function () {
+            wxoLoader.init();
+        });
+        document.head.appendChild(script);
+    }, 0);                     
+</script>

@@ -26,11 +26,14 @@ Save Draft: PASS
 The agent was successfully deployed to the env_test environment.
 
 Deployment Steps
-Import Tools:
-./venv/bin/orchestrate tools import --kind python --file agents/funding-copilot/tools_standard.py -r agents/funding-copilot/requirements_standard.txt
-Import Agent:
-./venv/bin/orchestrate agents import --file agents/funding-copilot/funding_agent.yaml
-Deploy Agent:
-./venv/bin/orchestrate agents deploy --name Funding_Copilot
+1. Install Dependencies:
+   `./.venv/bin/pip install -r agents/funding-copilot/requirements_standard.txt`
+2. Import Tools:
+   `./.venv/bin/orchestrate tools import --kind python --file agents/funding-copilot/tools_standard.py -r agents/funding-copilot/requirements_standard.txt`
+3. Import Agent:
+   `./.venv/bin/orchestrate agents import --file agents/funding-copilot/funding_agent.yaml`
+4. Deploy Agent:
+   `./.venv/bin/orchestrate agents deploy --name Funding_Copilot`
+
 Status
 [INFO] - Successfully deployed agent Funding_Copilot

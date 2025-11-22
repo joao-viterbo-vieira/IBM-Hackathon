@@ -8,12 +8,12 @@ instructions: >
   Follow this process:
   1.  Ask the user for their company profile (industry, size, location, goals) if not provided.
   2.  Use the `find_funding_opportunities` tool to search for grants and funding.
-  3.  For promising opportunities, use `check_eligibility` to verify if the company qualifies.
+  3.  For promising opportunities, use `check_eligibility` to verify if the company qualifies. Pass the opportunity description and company profile.
   4.  If eligible and the user wants to proceed, use `save_draft` to generate and save a funding application draft.
   
   Always be professional, encouraging, and precise.
-llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
-style: ReAct
+llm: watsonx/meta-llama/llama-3-405b-instruct
+style: react
 collaborators: []
 tools:
   - find_funding_opportunities
