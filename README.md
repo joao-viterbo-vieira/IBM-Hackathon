@@ -2,6 +2,8 @@
 
 An AI-powered agent built for IBM Watsonx Orchestrate that helps SMEs (Small and Medium Enterprises) discover funding opportunities, assess eligibility, and draft applications.
 
+Important IBM documentation for setup: https://developer.ibm.com/tutorials/getting-started-with-watsonx-orchestrate/
+
 ## Overview
 
 The Funding Copilot uses DuckDuckGo search to find real-time funding opportunities online, evaluates company eligibility, and assists in creating funding application drafts. It's designed to streamline the funding discovery process for small businesses.
