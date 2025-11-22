@@ -8,10 +8,11 @@ The Funding Copilot uses DuckDuckGo search to find real-time funding opportuniti
 
 ## Features
 
-- **🔍 Real-time Search**: Uses DuckDuckGo to find current funding opportunities, grants, and subsidies
+- **🔍 Curated AI Funding Database**: Access to 10 comprehensive AI funding opportunities covering various sectors
 - **✅ Eligibility Checking**: Evaluates whether your company qualifies for specific opportunities
 - **📝 Draft Generation**: Creates professional funding application drafts
 - **🤖 AI-Powered**: Leverages IBM Watsonx AI (Llama 3 405B) for intelligent assistance
+- **🎯 Smart Search**: Robust keyword matching across titles, providers, and descriptions
 
 ## Project Structure
 
@@ -33,11 +34,20 @@ IBM_Hackaton/
 ## Tools
 
 ### 1. `find_funding_opportunities`
-Searches for funding opportunities using DuckDuckGo.
+Searches for AI funding opportunities from a curated database of 10 comprehensive funding sources.
 
-**Input**: Query string (e.g., "AI startup funding", "green energy grants")
+**Input**: Query string (e.g., "AI startup", "healthcare AI", "machine learning")
 
-**Output**: JSON array of opportunities with title, link, and description
+**Output**: JSON array of opportunities with title, provider, amount, link, and detailed description
+
+**Database includes**:
+- AI Innovation grants ($50K-$250K)
+- Startup accelerator programs
+- Research grants
+- Healthcare AI funding
+- Climate tech AI grants
+- Generative AI creator funds
+- And more...
 
 ### 2. `check_eligibility`
 Evaluates if a company is eligible for a funding opportunity.
@@ -171,7 +181,6 @@ pip install -r agents/funding-copilot/requirements_standard.txt
 
 - **IBM Watsonx Orchestrate**: Agent orchestration platform
 - **IBM Watsonx AI**: LLM inference (Llama 3 405B)
-- **DuckDuckGo Search**: Real-time web search
 - **Python**: Implementation language
 - **Pydantic**: Data validation
 
