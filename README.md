@@ -189,7 +189,3 @@ pip install -r agents/funding-copilot/requirements_standard.txt
 ## License
 
 This project was created for the IBM Watsonx Orchestrate Hackathon.
-
-## Author
-
-Built with ❤️ for the IBM Watsonx Orchestrate Hackathon
